@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>서류 작성 예시</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:"Pretendard","Noto Sans KR",sans-serif;
+    }
+    body{
+      background:#7FA37B;
+      min-height:100vh;
+      color:white;
+    }
+    .container{
+      width:100%;
+      max-width:520px;
+      margin:0 auto;
+      padding:40px 20px 60px;
+    }
+    .menu{
+      text-align:right;
+      font-size:28px;
+      opacity:0.8;
+      margin-bottom:30px;
+    }
+    .title{
+      text-align:center;
+      font-size:34px;
+      font-weight:700;
+      line-height:1.4;
+      margin-top:30px;
+      word-break:keep-all;
+    }
+    .divider{
+      text-align:center;
+      margin:18px 0;
+      font-size:26px;
+      opacity:0.7;
+    }
+    .desc{
+      text-align:center;
+      font-size:20px;
+      line-height:1.7;
+      margin-bottom:50px;
+      opacity:0.95;
+      word-break:keep-all;
+    }
+    .card{
+      background:#D9D8BC;
+      border-radius:24px;
+      padding:24px;
+    }
+    .card-title{
+      color:#6E9B68;
+      font-size:26px;
+      font-weight:700;
+      margin-bottom:22px;
+      line-height:1.4;
+      word-break:keep-all;
+    }
+    .document-box{
+      background:white;
+      border-radius:18px;
+      padding:16px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    }
+    .document-box img{
+      width:100%;
+      display:block;
+      border-radius:10px;
+      margin-bottom:20px;
+    }
+    .document-box img:last-child{
+      margin-bottom:0;
+    }
+    @media(max-width:480px){
+      .title{
+        font-size:30px;
+      }
+      .desc{
+        font-size:18px;
+      }
+      .card-title{
+        font-size:23px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="menu">⋮</div>
+    <h1 class="title">
+      전입신고서 예시
+    </h1>
+    <div class="divider">-</div>
+    <p class="desc">
+      전라남도 순천시에서 제공하는<br>
+      전입신고서 작성 예시입니다
+    </p>
+    <div class="card">
+      <div class="card-title">
+        전입신고서 작성 예시
+      </div>
+      <div class="document-box">
+        <!-- 이미지 추가 -->
+        <img src="document3.jpg" alt="서류1">
+        <img src="document4.jpg" alt="서류2">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
