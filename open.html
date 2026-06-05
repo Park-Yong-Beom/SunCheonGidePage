@@ -36,32 +36,22 @@
     }
 
     /* =========================
-       🔥 TITLE DESIGN SYSTEM
+       TITLE DESIGN SYSTEM
     ========================== */
 
     .ui-title{
       font-weight:700;
       line-height:1.3;
       text-align:center;
+      font-size:clamp(16px,4vw,30px);
 
-      font-size: clamp(16px, 4vw, 30px);
-
-      /* 🔥 1줄 유지 시스템 */
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
     }
 
     .ui-title-xl{
-      font-size: clamp(18px, 5vw, 34px);
-    }
-
-    .ui-title-lg{
-      font-size: clamp(16px, 4.2vw, 28px);
-    }
-
-    .ui-title-md{
-      font-size: clamp(14px, 3.8vw, 24px);
+      font-size:clamp(18px,5vw,34px);
     }
 
     .divider{
@@ -96,12 +86,11 @@
       padding-left:10px;
       margin-bottom:22px;
 
-      font-size: clamp(15px, 3.5vw, 22px);
+      font-size:clamp(15px,3.5vw,22px);
 
-      /* 🔥 1줄 유지 */
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
     }
 
     .document-box{
@@ -128,11 +117,14 @@
       margin-left:-3%;
       display:block;
       border-radius:10px;
+
+      cursor:pointer;
+      transition:transform 0.2s ease;
     }
 
-    /* =========================
-       MOBILE OPTIMIZATION
-    ========================== */
+    .paper img:active{
+      transform:scale(0.98);
+    }
 
     @media(max-width:480px){
 
@@ -152,7 +144,6 @@
 
     <div class="menu">⋮</div>
 
-    <!-- 🔥 UI TITLE SYSTEM 적용 -->
     <h1 class="ui-title ui-title-xl">
       전입세대확인서 열람 또는 교부 신청서 예시
     </h1>
@@ -161,23 +152,29 @@
 
     <p class="desc">
       전라남도 순천시에서 제공하는<br>
-      전입세대확인서 열람 또는 교부 신청서 작성 예시입니다
+      전입세대확인서 열람 또는 교부 신청서 예시 입니다
     </p>
 
     <div class="card">
 
       <div class="card-title">
-        전입세대확인서 열람 또는 교부 신청서 작성 예시
+        전입세대확인서 열람 또는 교부 신청서 예시
       </div>
 
       <div class="document-box">
 
+        <!-- 첫 번째 이미지 -->
         <div class="paper">
-          <img src="document1.jpg" alt="서류1">
+          <a href="document1.jpg">
+            <img src="document1.jpg" alt="서류1">
+          </a>
         </div>
 
+        <!-- 두 번째 이미지 -->
         <div class="paper">
-          <img src="document2.jpg" alt="서류2">
+          <a href="document2.jpg">
+            <img src="document2.jpg" alt="서류2">
+          </a>
         </div>
 
       </div>
